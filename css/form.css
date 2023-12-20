@@ -250,3 +250,38 @@ textarea {
 .confirmation .buttons {
     margin-left:auto;
 }
+
+#newsletter form {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+}
+#newsletter {
+    background-color: #1DAE1B;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+#newsletter .content {
+    width: 100%;
+}
+
+#newsletter label {
+    visibility: hidden;
+    display: none;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+#newsletter input {
+    width: 50%;
+}
+
+#newsletter button {
+    height:48px;
+    padding: 0 64px;
+}

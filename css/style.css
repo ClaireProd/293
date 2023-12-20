@@ -22,16 +22,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    align-items:center;
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width:100%;
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 980px;
 }
 
 footer {
@@ -65,16 +68,6 @@ a:hover {
 
 ::-webkit-scrollbar {
     width: 8px; /* Default width for both scrollbars */
-}
-
-/* For the vertical scrollbar */
-::-webkit-scrollbar-vertical {
-    width: 8px;
-}
-
-/* For the horizontal scrollbar */
-::-webkit-scrollbar-horizontal {
-    height: 8px;
 }
 
 /* Track */
@@ -238,35 +231,6 @@ header {
     border-radius: 20px;
 }
 
-#actualites {
-    background-color: #1DAE1B;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.actu-list {
-    display: flex;
-    gap: 20px;
-    overflow: auto;
-    white-space: nowrap;
-    margin-bottom: 48px;
-}
-
-.actu-list article {
-    text-align: start;
-    width: 340px;
-    margin-bottom: 12px;
-}
-
-.actu-list article img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 20px;
-}
 
 .text-image-block {
     display: flex;
@@ -282,29 +246,10 @@ header {
     aspect-ratio: 75/100;
 }
 
-#newsletter {
-    background-color: #1DAE1B;
-    margin: 0;
-    padding-bottom: 48px;
-}
-
-#newsletter .content {
-    width: 100%;
-}
-
-#newsletter label {
-    visibility: hidden;
-    display: none;
-}
-
-#newsletter form {
-    display: flex;
-    justify-content: flex-start;
-    gap: 32px;
-}
-
-#newsletter input {
-    max-width: 340px;
+#home-video iframe {
+    width:100%;
+    aspect-ratio: 16/9;
+    border:0;
 }
 
 /*
@@ -419,6 +364,13 @@ div.partner {
     align-items:center;
 }
 
+/**
+// QUESAKO
+ */
+
+video {
+    width: 100%;
+}
 
 
 
@@ -433,11 +385,16 @@ div.partner {
         display: none;
     }
 
+    .content {
+        max-width: 740px;
+        background-color:blue;
+    }
+
 
 }
 
 /* EX: IPAD VERTICSL */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     td {
         width: 20px;
         height: 20px;
@@ -446,6 +403,7 @@ div.partner {
     .content {
         max-width: 500px;
         flex-direction: column;
+        background-color:red;
     }
 
     .partners {
@@ -460,7 +418,7 @@ div.partner {
 
 
 /* EX: SMARTPHONE */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px){
     td {
         width: 20px;
         height: 20px;
@@ -468,5 +426,11 @@ div.partner {
 
     .atomic-number {
         display: none;
+    }
+
+    .content {
+        margin: 0 50px;
+        flex-direction:column;
+        background-color:yellow;
     }
 }
