@@ -136,7 +136,7 @@ h4, .h4 {
     width: 25px;
     height: 3px;
     background-color: white;
-    border-radius: 1.5px;
+    border-radius: 2px;
 }
 
 nav {
@@ -387,13 +387,12 @@ video {
 
     .content {
         max-width: 740px;
-        background-color:blue;
     }
 
 
 }
 
-/* EX: IPAD VERTICSL */
+/* EX: IPAD VERTICAL */
 @media only screen and (max-width: 768px) {
     td {
         width: 20px;
@@ -403,7 +402,6 @@ video {
     .content {
         max-width: 500px;
         flex-direction: column;
-        background-color:red;
     }
 
     .partners {
@@ -431,6 +429,5 @@ video {
     .content {
         margin: 0 50px;
         flex-direction:column;
-        background-color:yellow;
     }
 }
