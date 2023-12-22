@@ -242,7 +242,6 @@ header {
 }
 
 #marie-curie img {
-    width: 50%;
     aspect-ratio: 75/100;
 }
 
@@ -294,7 +293,7 @@ td.element {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -313,7 +312,10 @@ td.element {
     color: black;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: fixed;
+    top:10%;
+    left:10%;
+    right:10%;
     margin: 128px auto;
 }
 
@@ -330,6 +332,18 @@ td.element {
 .overlay:target {
     visibility: visible;
     opacity: 1;
+}
+
+#isotope a {
+    text-decoration: underline;
+}
+
+#isotpe img {
+    width:100%;
+}
+
+#construit-ton-atome a {
+    text-decoration: underline;
 }
 
 /*
@@ -389,7 +403,27 @@ video {
         max-width: 740px;
     }
 
+    .atomic-letter {
+        font-size:1rem;
+    }
 
+    .atomic-number {
+        display: none;
+    }
+
+    .atomic-letter {
+        font-size: .7rem;
+    }
+
+    #marie-curie img {
+        width: 100%;
+        margin-bottom: 64px;
+    }
+
+    .content {
+        max-width: 500px;
+        flex-direction: column;
+    }
 }
 
 /* EX: IPAD VERTICAL */
@@ -399,18 +433,13 @@ video {
         height: 20px;
     }
 
-    .content {
-        max-width: 500px;
-        flex-direction: column;
-    }
-
     .partners {
         margin: 0;
     }
 
-    #marie-curie img {
-        width: 100%;
-        margin-bottom: 64px;
+
+    .atomic-letter {
+        font-size:.5rem;
     }
 }
 
@@ -422,12 +451,16 @@ video {
         height: 20px;
     }
 
-    .atomic-number {
-        display: none;
+    .content {
+        max-width:90%;
+        flex-direction:column;
     }
 
-    .content {
-        margin: 0 50px;
-        flex-direction:column;
+    .atomic-letter {
+        font-size:.3rem;
+    }
+
+    td.element {
+        padding:0;
     }
 }

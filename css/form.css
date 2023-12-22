@@ -11,13 +11,15 @@ input {
     width:100%;
     height: 48px;
     border-radius: 10px;
-    padding: 0 8px;
     border:0;
+    padding:0;
 }
 
 ::placeholder {
     font-family: 'Poppins', Verdana, Arial, serif;
-    opacity: 1; /* Firefox */
+    opacity: 50%; /* Firefox */
+    padding-left:8px;
+    margin-left:8px;
 }
 
 button {
@@ -43,6 +45,7 @@ fieldset {
 #montant {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .radio-block {
@@ -74,7 +77,7 @@ label .legend {
 
 input[type="radio" i].custom-radio {
     appearance: none;
-    margin: 30px;
+    margin: 15px;
     font: inherit;
     color: white;
     width: 10rem;
@@ -102,7 +105,7 @@ input[type="radio"]:checked::before {
     font: inherit;
     color: white;
     height: 48px;
-    display: grid;
+    display: flex;
     padding:0;
     width:100%;
 }
@@ -189,7 +192,11 @@ select option {
 }
 
 input#conditions {
-    width:32px;
+    width:16px;
+}
+
+.confirmation a {
+    text-decoration: underline;
 }
 
 .confirmation .button {
@@ -204,7 +211,7 @@ input#conditions {
 #contact {
     background-color: #1DAE1B;
     border-radius:40px;
-    gap:0;
+    gap:16px;
     padding-bottom:32px;
 }
 
@@ -221,6 +228,7 @@ input#conditions {
 
 .line label {
     visibility: hidden;
+    display:none;
 }
 
 .classic-radio {
@@ -241,14 +249,10 @@ input#conditions {
 }
 
 textarea {
-    width:70%;
     margin:32px 0 ;
     border-radius:10px;
     height:10rem;
-}
-
-.confirmation .buttons {
-    margin-left:auto;
+    width:100%;
 }
 
 #newsletter form {
@@ -286,9 +290,110 @@ textarea {
     padding: 0 64px;
 }
 
-@media only screen and (max-width: 500px) {
+#newsletter .line {
+    justify-content: flex-start;
+}
+
+input[type="radio" i].classic-radio {
+    width:1rem;
+}
+
+#contact-gender {
+    display:flex;
+    gap:8px;
+    width:70%;
+}
+
+#contact-gender div {
+    display:flex;
+    align-items: center;
+    gap:8px;
+}
+
+#country-tel {
+   font-size:1em;
+    width:64px;
+}
+
+#country-tel option {
+    font-size: 1em;
+    width:100%;
+}
+
+#country-phone {
+    display:flex;
+    width:100%;
+    gap:16px;
+}
+
+
+#country-phone .dropdown {
+    width:fit-content;
+}
+
+#country-phone .dropdown select {
+    background-color:white;
+}
+
+#contact-gender span {
+    text-align: start;
+    align-self: center;
+}
+
+.buttons {
+    display:flex;
+    width:70%;
+    justify-content: flex-start;
+}
+
+.confirmation label {
+    display:block;
+    visibility: visible;
+}
+
+.confirmation {
+    justify-content: start;
+}
+
+.label-visible label{
+    visibility: visible;
+    display:block;
+    text-align: left;
+    padding-left:4px;
+}
+
+@media only screen and (max-width: 768px) {
     .line {
         flex-direction: column;
-        gap:0;
+        gap:16px;
+    }
+
+    #contact {
+        gap:16px;
+    }
+
+    #frequency {
+        width:100%;
+    }
+
+    #frequency label {
+        font-size: .8rem;
+    }
+
+    #contact-gender span {
+        justify-self:center;
+        align-self: start;
+    }
+    .confirmation {
+        flex-direction: row;
+    }
+    #newsletter input {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #contact-gender {
+        flex-direction: column;
     }
 }
