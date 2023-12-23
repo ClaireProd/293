@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="top">
+
+<!---Page personnelle custom-->
 <head>
-    <title>La radioactivité - Accueil</title>
-    <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
-    <link href="/css/form.css" rel="stylesheet"/>
+    <title>La radioactivité - Faire un don</title>
+    <meta charset="utf-8">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
 </head>
-<body class="page" id="#home">
+<body class="page" id="don">
 <header>
     <div class="logo">
         <img src="/pictures/logo.png" alt="logo" class="logo-image">
         <span>293</span>
     </div>
     <div class="menu">
-        <span>Menu</span>
         <a href="#menu">
+            <span>Menu</span>
             <div class="burger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -33,14 +35,18 @@
                 <li><h4><a href="/web/contact.html">Contact</a></h4></li>
                 <li><p><a href="/web/newsletter.html">Newsletter</a></p></li>
                 <li><p><a href="/web/don.html">Faire un don</a></p></li>
+                <li><p><a href="/web/pdf.html">A propos</a></p></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
     <form>
-        <fieldset class="content" id="mon-don" t>
+        <fieldset class="content" id="mon-don">
             <h3>MON DON</h3>
+
+            <!---Boutons radios custom blocs-->
+
             <div id="montant">
                 <div class="radio-block">
                     <input type="radio" id="5" name="montant" value="5" class="custom-radio">
@@ -59,32 +65,39 @@
                 </div>
                 <div class="radio-block">
                     <input type="radio" id="propre" name="montant" value="propre" class="custom-radio">
-                    <label for="propre"><p class="legend">Propre montant</p></label>
+                    <label for="propre" class="legend">Propre montant</label>
                 </div>
             </div>
+
+            <!---Type de selection unique avec une barre-->
+
             <div id="frequency">
-                <div class=>
+                <div>
                     <input type="radio" id="une" name="frequence" value="une">
                     <label for="une">Une fois</label>
                 </div>
-                <div class="">
+                <div>
                     <input type="radio" id="hebdomadaire" name="frequence" value="hebdomadaire">
                     <label for="hebdomadaire">Hebdomadaire</label>
                 </div>
-                <div class="">
+                <div>
                     <input type="radio" id="mensuel" name="frequence" value="mensuel">
                     <label for="mensuel">Mensuel</label>
                 </div>
-                <div class="">
+                <div>
                     <input type="radio" id="anuel" name="frequence" value="propre">
                     <label for="anuel">Annuel</label>
                 </div>
             </div>
         </fieldset>
         <fieldset class="content">
+
+            <!---Menu déroulant de sélection-->
+
             <h3>MOYEN DE PAIEMENT</h3>
             <div id="paiement">
-                <select>
+                <label for="transaction">Moyen de paiement</label>
+                <select id="transaction">
                     <option value="credit">Carte de crédit</option>
                     <option value="paypal">PayPal</option>
                     <option value="bv">Bulletin de versement</option>
@@ -96,27 +109,38 @@
             </div>
         </fieldset>
         <fieldset class="content">
+
+            <!---Checkbox de confirmation-->
+
             <h3>CONFIRMATION</h3>
             <div class="confirmation">
-                <input type="checkbox" id="conditions" name="conditions">
-                <label for="conditions"><p>Je confirme que je veux bien effectuer ce paiement.</p></label>
+                <div id="checkbox-message">
+                    <input type="checkbox" id="conditions" name="conditions">
+                    <label for="conditions">Je confirme que je veux bien effectuer ce paiement.</label>
+                </div>
                 <button type="submit" class="button">Faire le don</button>
             </div>
         </fieldset>
     </form>
     <section class="partners-carousel">
+
+        <!---Carousel des partenaires avec un scroll horizontal-->
+
         <h2>Nos partenaires</h2>
         <div class="carousel">
             <div class="partner-1 partner"></div>
             <div class="partner-2 partner"></div>
+            <div class="partner-3 partner"></div>
             <div class="partner-1 partner"></div>
             <div class="partner-2 partner"></div>
-            <div class="partner-1 partner"></div>
-            <div class="partner-2 partner"></div>
+            <div class="partner-3 partner"></div>
         </div>
     </section>
 </main>
 <footer>
+
+    <!---Rappel de la navigation-->
+
     <div class="nav-rappel content">
         <div>
             <h4>Découvrir:</h4>
@@ -139,5 +163,8 @@
         </div>
     </div>
 </footer>
+<a href="#top">
+    <div class="ancre">&And;</div>
+</a>
 </body>
 </html>

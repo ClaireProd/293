@@ -1,25 +1,25 @@
 form {
-    width:100%;
-    display:flex;
-    flex-direction:column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    gap:100px;
+    gap: 100px;
 }
 
 input {
-    width:100%;
+    width: 100%;
     height: 48px;
     border-radius: 10px;
-    border:0;
-    padding:0;
+    border: 0;
+    padding: 0;
 }
 
 ::placeholder {
     font-family: 'Poppins', Verdana, Arial, serif;
     opacity: 50%; /* Firefox */
-    padding-left:8px;
-    margin-left:8px;
+    padding-left: 8px;
+    margin-left: 8px;
 }
 
 button {
@@ -34,44 +34,44 @@ button {
 
 fieldset {
     border: none;
-    background-color: rgba(255,255,255,0.1);
-    border-radius:40px;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #montant {
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .radio-block {
-    position:relative;
-    width:fit-content;
+    position: relative;
+    width: fit-content;
 }
 
 .radio-block span {
-   position:absolute;
-    top:32px;
-    left:38px;
+    position: absolute;
+    top: 32px;
+    left: 38px;
 }
 
 .radio-block label {
     position: absolute;
     top: calc(50% - 30px);
-    left:0;
-    bottom:0;
-    right:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     text-align: center;
     vertical-align: center;
     font-size: 3rem;
 }
 
-label .legend {
-    font-size:1.5rem;
+.legend {
+    font-size: 1.5rem;
     margin: auto 30px;
 }
 
@@ -84,60 +84,60 @@ input[type="radio" i].custom-radio {
     height: 10rem;
     display: grid;
     place-content: center;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 input[type="radio"]::before {
     content: "";
     width: 10rem;
     height: 10rem;
-    background-color: rgba(255,255,2555,0.1);
-    border-radius:20px;
+    background-color: rgba(255, 255, 2555, 0.1);
+    border-radius: 20px;
 }
 
 input[type="radio"]:checked::before {
-    background-color:#1DAE1B;
+    background-color: #1DAE1B;
 }
 
-#frequency input[type="radio" i] {
+#frequency input[type="radio"] {
     appearance: none;
     margin: 0;
     font: inherit;
     color: white;
     height: 48px;
     display: flex;
-    padding:0;
-    width:100%;
+    padding: 0;
+    width: 100%;
 }
 
 #frequency input[type="radio"]::before {
     content: "";
     height: 48px;
-    width:100%;
+    width: 100%;
     background-color: white;
-    border-radius:0;
-    margin:0;
-    padding:0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
     place-content: center;
 }
 
 #frequency input[type="radio"]:checked::before {
-    background-color:#1DAE1B;
+    background-color: #1DAE1B;
 }
 
 #frequency label {
     color: #2A2A2A;
     position: absolute;
-    top:12px;
-    bottom:0;
-    left:0;
-    right:0;
-    text-align:center;
+    top: 12px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 #frequency div {
-    position:relative;
-    width:25%;
+    position: relative;
+    width: 25%;
 }
 
 
@@ -145,121 +145,122 @@ input[type="radio"]:checked::before {
     border-radius: 24px;
     overflow: hidden;
     display: flex;
-    margin:30px;
-    width:70%;
+    margin: 30px;
+    width: 70%;
 }
 
 select {
-    width:50%;
-    height:48px;
-    border:none;
-    font-size:1.5rem;
+    width: 50%;
+    height: 48px;
+    border: none;
+    font-size: 1.5rem;
     border-radius: 20px;
     padding: 0 12px;
 }
 
 select option {
     height: 3rem;
-    font-size:1vw;
+    font-size: 1vw;
 }
 
 #paiement {
-    display:flex;
-    width:70%;
-    gap:32px;
+    display: flex;
+    width: 70%;
+    gap: 32px;
     margin: 32px;
 }
 
 #paiement label {
-    display:none;
+    display: none;
     visibility: hidden;
 }
 
 #paiement div {
-    width:50%;
+    width: 50%;
 }
 
 #paiement input {
-    height:48px;
-    border-radius:20px;
+    height: 48px;
+    border-radius: 20px;
 }
 
 .confirmation {
-    display:flex;
-    width:70%;
+    display: flex;
+    width: 70%;
     align-items: center;
-    gap:16px;
+    gap: 16px;
 }
 
 input#conditions {
-    width:16px;
+    width: 16px;
 }
 
 .confirmation a {
     text-decoration: underline;
 }
 
-.confirmation .button {
-    margin-left:auto;
-    height:48px;
+.confirmation button {
+    margin-left: auto;
+    height: 48px;
     padding: 0 64px;
     border-radius: 20px;
-    font-size:24px;
-    font-weight:bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-#contact {
+#contact-form {
     background-color: #1DAE1B;
-    border-radius:40px;
-    gap:16px;
-    padding-bottom:32px;
+    border-radius: 40px;
+    gap: 16px;
+    padding-bottom: 32px;
 }
 
 .line {
-    display:flex;
-    justify-content:space-between;
-    gap:32px;
-    width:70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    width: 70%;
 }
 
 .line div {
-    width:100%;
+    width: 100%;
 }
 
 .line label {
     visibility: hidden;
-    display:none;
+    display: none;
 }
 
 .classic-radio {
-    display:flex;
-    width:70%;
+    display: flex;
+    width: 70%;
 }
 
 .classic-radio div {
-    display:flex;
-    align-items:center;
-    margin-left:32px;
-    gap:4px;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    gap: 4px;
 }
 
-.classic-radio input::before {
-    width:32px;
-    height:32px;
+input[type="radio"].classic-radio::before {
+    width: 32px;
+    height: fit-content;
 }
 
 textarea {
-    margin:32px 0 ;
-    border-radius:10px;
-    height:10rem;
-    width:100%;
+    margin: 32px 0;
+    border-radius: 10px;
+    height: 10rem;
+    width: 100%;
 }
 
 #newsletter form {
-    width:100%;
-    display:flex;
-    flex-direction:row;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
+
 #newsletter {
     background-color: #1DAE1B;
     margin: 0;
@@ -286,7 +287,7 @@ textarea {
 }
 
 #newsletter button {
-    height:48px;
+    height: 48px;
     padding: 0 64px;
 }
 
@@ -295,44 +296,45 @@ textarea {
 }
 
 input[type="radio" i].classic-radio {
-    width:1rem;
+    width: 1rem;
 }
 
 #contact-gender {
-    display:flex;
-    gap:8px;
-    width:70%;
+    display: flex;
+    gap: 8px;
+    width: 70%;
 }
 
 #contact-gender div {
-    display:flex;
+    display: flex;
     align-items: center;
-    gap:8px;
+    gap: 8px;
 }
 
 #country-tel {
-   font-size:1em;
-    width:64px;
+    font-size: 1em;
+    width: 64px;
 }
 
 #country-tel option {
     font-size: 1em;
-    width:100%;
+    width: 100%;
 }
 
 #country-phone {
-    display:flex;
-    width:100%;
-    gap:16px;
+    display: flex;
+    width: 100%;
+    gap: 16px;
 }
 
 
 #country-phone .dropdown {
-    width:fit-content;
+    width: fit-content;
 }
 
 #country-phone .dropdown select {
-    background-color:white;
+    background-color: white;
+    width: 128px;
 }
 
 #contact-gender span {
@@ -341,13 +343,13 @@ input[type="radio" i].classic-radio {
 }
 
 .buttons {
-    display:flex;
-    width:70%;
+    display: flex;
+    width: 70%;
     justify-content: flex-start;
 }
 
 .confirmation label {
-    display:block;
+    display: block;
     visibility: visible;
 }
 
@@ -355,25 +357,38 @@ input[type="radio" i].classic-radio {
     justify-content: start;
 }
 
-.label-visible label{
+.confirmation button {
+    font-size: 12px;
+    padding: 0 32px;
+    width: 128px;
+}
+
+.label-visible label {
     visibility: visible;
-    display:block;
+    display: block;
     text-align: left;
-    padding-left:4px;
+    padding-left: 4px;
+}
+
+#checkbox-message {
+    display:flex;
+    text-align:start;
+    align-items:flex-end;
+    gap: 16px;
 }
 
 @media only screen and (max-width: 768px) {
     .line {
         flex-direction: column;
-        gap:16px;
+        gap: 16px;
     }
 
     #contact {
-        gap:16px;
+        gap: 16px;
     }
 
     #frequency {
-        width:100%;
+        width: 100%;
     }
 
     #frequency label {
@@ -381,14 +396,17 @@ input[type="radio" i].classic-radio {
     }
 
     #contact-gender span {
-        justify-self:center;
+        justify-self: center;
         align-self: start;
     }
+
     .confirmation {
-        flex-direction: row;
+        flex-direction: column;
+        align-items:center;
     }
+
     #newsletter input {
-        width:100%;
+        width: 100%;
     }
 }
 

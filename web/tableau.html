@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="top">
 <head>
-    <title>La radioactivité - Accueil</title>
-    <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
+    <title>La radioactivité - Tableau interractif</title>
+    <meta charset="utf-8">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
-<body class="page" id="#home">
+
+<!---On a différents commentaire: texte formaté, image, etc... pour rechercher les éléemtns dans ce grand fichier-->
+
+<body class="page" id="tableau-periodique">
 <header>
     <div class="logo">
         <img src="/pictures/logo.png" alt="logo" class="logo-image">
         <span>293</span>
     </div>
     <div class="menu">
-        <span>Menu</span>
         <a href="#menu">
+            <span>Menu</span>
             <div class="burger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -32,13 +35,23 @@
                 <li><h4><a href="/web/contact.html">Contact</a></h4></li>
                 <li><p><a href="/web/newsletter.html">Newsletter</a></p></li>
                 <li><p><a href="/web/don.html">Faire un don</a></p></li>
+                <li><p><a href="/web/pdf.html">A propos</a></p></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <section id="tableau">
+    <section id="tableau" class="content">
         <h2>Tableau périodique des éléments</h2>
+        <!---Ancrages du sommaire-->
+        <div class="sommaire">
+            <ul>
+                <li><a href="#tableau">Tableau</a></li>
+                <li><a href="#isotope">Qu'est ce qu'un isotope</a></li>
+                <li><a href="#construit-ton-atome">Construit ton atome</a></li>
+            </ul>
+        </div>
+
         <p>Découvre où se trouvent les éléments radioactifs dans ce tableau et apprend à les connaître en cliquant
             dessus</p>
         <table>
@@ -1118,7 +1131,7 @@
                         Lutetium
                     </div>
                 </td>
-                <td colspan="1"></td>
+                <td colspan="2"></td>
             </tr>
             <tr>
                 <td colspan="3"></td>
@@ -1289,7 +1302,7 @@
                         </div>
                     </a>
                 </td>
-                <td colspan="1"></td>
+                <td colspan="2"></td>
             </tr>
         </table>
         <div id="43" class="overlay">
@@ -2056,20 +2069,25 @@
             </div>
         </div>
     </section>
+    <!---Texte formaté-->
     <section class="content" id="isotope">
         <h2>Qu'est ce qu'un isotope?</h2>
         <article>
             <h3>D'après le dictionnaire</h3>
             <p>Le dictionnaire nous dit: </p>
-            <q> Chacun des différents types d'<a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html">atomes</a> d'un même élément, différant par leur
+            <q> Chacun des différents types d'<a
+                    href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html">atomes</a>
+                d'un même élément, différant par leur
                 nombre de neutrons mais ayant le même nombre de protons et d'électrons, et possédant donc les mêmes
                 propriétés chimiques. </q><br>
             <cite>Larousse</cite>
         </article>
         <article>
             <h3>Plus simplement</h3>
-            <p><strong>Chaque atome, visible dans le tableau ci-dessus est en réalité composé d'un noyeaux composés de protons e
-                tde neutrons. Autour de celui-ci gravient des électrons.</strong> On dit qu'un atome est neutre qu'on il possède
+            <p><strong>Chaque atome, visible dans le tableau ci-dessus est en réalité composé d'un noyeaux composés de
+                protons e
+                tde neutrons. Autour de celui-ci gravient des électrons.</strong> On dit qu'un atome est neutre qu'on il
+                possède
                 le même nombre de protons que d'électrons.</p>
             <p>Les isotopes sont des atomes qui possèdent le même nombre d'électrons – et donc de protons, pour rester
                 neutre -, mais un nombre différent de neutrons. On connaît actuellement environ 325 isotopes naturels et
@@ -2078,14 +2096,17 @@
                 Les isotopes d’un même élément ont des propriétés chimiques identiques mais des propriétés physiques
                 différentes (stables ou radioactifs notamment).</p>
             <p>Par exemple, l'hydrogène a trois isotopes:</p>
+            <!---Image-->
             <img src="/pictures/irsn_radioactivite_isotopes--hydrogene.jpeg" alt="isotopes de l'hydrogène">
-            <p>De son côté, <a href="https://fr.wikipedia.org/wiki/Uranium">l’uranium</a> a 17 isotopes, tous radioactifs. Ils possèdent tous 92 protons mais ils ont entre
+            <p>De son côté, <a href="https://fr.wikipedia.org/wiki/Uranium">l’uranium</a> a 17 isotopes, tous
+                radioactifs. Ils possèdent tous 92 protons mais ils ont entre
                 125 et 150 neutrons.
 
                 S
 
                 eulement trois sont présents naturellement sur Terre et surtout l’un d’eux, à plus de 99% : l’uranium
                 238.</p>
+            <!-- Image-->
             <img src="/pictures/irsn_radioactivite_isotopes--uranium.jpeg" alt="isotopes de l'uranium">
             <p>Si l'isotope d'un élément donné est radioactif, on l’appelle radionucléide ou radio isotope (par exemple
                 l'uranium 238, l'iode 131...).
@@ -2095,8 +2116,10 @@
     </section>
     <section id="construit-ton-atome" class="content">
         <h2>Construit ton atome</h2>
-        <p>Voici un site amusant qui te permettra de construire ton propre atome. Il te permet aussi d'explorer les symboles et de faire un jeu.</p>
-        <p>Consulte le sur: <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html">https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html</a></p>
+        <p>Voici un site amusant qui te permettra de construire ton propre atome. Il te permet aussi d'explorer les
+            symboles et de faire un jeu.</p>
+        <p>Consulte le sur: <a href="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html">https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_fr.html</a>
+        </p>
     </section>
 
 
@@ -2124,5 +2147,8 @@
         </div>
     </div>
 </footer>
+<a href="#top">
+    <div class="ancre">&And;</div>
+</a>
 </body>
 </html>

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr" class="center col">
+<html lang="fr" id="top">
 <head>
     <title>La radioactivité - Accueil</title>
-    <meta charset="utf-8"/>
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/form.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
 </head>
-<body class="page" id="#home">
+<body class="page" id="home">
 <header>
     <div class="logo">
+        <!---Logo -->
         <img src="pictures/logo.png" alt="logo" class="logo-image">
         <span>293</span>
     </div>
     <div class="menu">
-        <span>Menu</span>
+        <!---Menu de navigation burger-->
         <a href="#menu">
+            <span>Menu</span>
             <div class="burger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -33,33 +35,38 @@
                 <li><h4><a href="/web/contact.html">Contact</a></h4></li>
                 <li><p><a href="/web/newsletter.html">Newsletter</a></p></li>
                 <li><p><a href="/web/don.html">Faire un don</a></p></li>
+                <li><p><a href="/web/pdf.html">A propos</a></p></li>
             </ul>
         </nav>
     </div>
+    <!---Fin du menu de navigation burger-->
 </header>
+<!-- La balise main définit le corps de ma page-->
 <main>
-    <section id="home-intro">
+    <div id="home-intro">
         <div class="content">
-            <article class="paragraph">
-                <h1>La radioactivité</h1>
+            <div class="paragraph">
+                <h2>La radioactivité</h2>
                 <p>La radioactivité provient des rayonnements (on parle également de radiation) produits par des atomes
                     instables qui se désintègrent en dégageant de l'énergie.
                     La radioactivité a été observée par de grands scientifiques à la fin du XIXe siècle : Henri
                     Becquerel,
                     Marie Curie (à droite) et Pierre Curie.
                 </p>
-            </article>
+            </div>
             <aside class="partners">
-                <h4><a href="/partenaires">Nos partenaires</a></h4>
-                <img src="pictures/8891351.jpg" alt="partner-science">
+                <h4><a href="/partenaires">Notre partenaire</a></h4>
+                <!-- Insertion d'une publicité dans une zone asside-->
+                <img src="pictures/Logo-oasis.png" alt="partner-science">
             </aside>
         </div>
-    </section>
-    <section class="content" id="home-video">
+    </div>
+    <div class="content" id="home-video">
+        <!---Insertion d'une video youtube via une ifrmae-->
         <iframe src="https://www.youtube.com/embed/_R22zEQFxsU" title="La radioactivité expliquée en 3 minutes"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-    </section>
+    </div>
     <section id="marie-curie">
         <div class="content text-image-block">
             <div>
@@ -122,10 +129,15 @@
     <div class="bottom-bar">
         <span class="legend"><a href="/web/conditions.html">Conditions d'utilisation</a></span>
         <div>
+            <!---Sources-->
+            <span><a href="/web/sources.html">Sources</a></span>
+            <!---Crédits-->
             <span><a href="/web/credits.html">Crédits</a></span>
+            <!---Mailto-->
             <a href="mailto:claire@inetis.ch.com">Contact web</a>
         </div>
     </div>
 </footer>
+<a href="#top"><div class="ancre">&And;</div></a>
 </body>
 </html>
